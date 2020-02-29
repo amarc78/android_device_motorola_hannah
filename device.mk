@@ -201,8 +201,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.hannah
 
 # LineageActions
-PRODUCT_PACKAGES += \
-    LineageActions
+#PRODUCT_PACKAGES += \
+#    MotoActions
 
 # Media
 PRODUCT_COPY_FILES += \
