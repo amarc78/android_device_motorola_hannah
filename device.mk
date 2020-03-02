@@ -16,8 +16,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -76,8 +75,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libbson \
-    Snap
+    libbson
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -113,10 +111,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
-
-# Doze
-PRODUCT_PACKAGES += \
-    MotoDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -199,10 +193,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.hannah
-
-# LineageActions
-PRODUCT_PACKAGES += \
-    LineageActions
 
 # Media
 PRODUCT_COPY_FILES += \
